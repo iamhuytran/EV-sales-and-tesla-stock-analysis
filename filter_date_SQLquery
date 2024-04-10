@@ -1,0 +1,13 @@
+CREATE TABLE Tesla
+	(
+		record_date DATE
+		, price DECIMAL(5,2)
+		, volume INT
+			);
+
+INSERT INTO Tesla (record_date, price, volume)
+SELECT [date], [close], [volume] 
+FROM [sql_practice].[dbo].[MacroTrends_Data_Download_TSLA]
+WHERE [date] BETWEEN '2021-01-01' AND '2023-12-31';
+
+SELECT * FROM Tesla
