@@ -1,0 +1,63 @@
+SELECT *
+  FROM [sql_practice].[dbo].[EV_car_sales];
+
+CREATE TABLE Year_2021 
+	(
+		Months VARCHAR(20)
+		, Year_Quarter VARCHAR(20)
+		, Sales INT
+		);
+
+CREATE TABLE Year_2022 
+	(
+		Months VARCHAR(20)
+		, Year_Quarter VARCHAR(20)
+		, Sales INT
+		);
+
+CREATE TABLE Year_2023 
+	(
+		Months VARCHAR(20)
+		, Year_Quarter VARCHAR(20)
+		, Sales INT
+		);
+
+INSERT INTO Year_2021 (Months, Year_Quarter, Sales)
+	SELECT EV.Months, CONCAT_WS(' ', 2021, EV.Months), EV.Year_2021 
+	FROM [sql_practice].[dbo].[EV_car_sales] EV;
+
+INSERT INTO Year_2022 (Months, Year_Quarter, Sales)
+	SELECT EV.Months, CONCAT_WS(' ', 2022, EV.Months), EV.Year_2022 
+	FROM [sql_practice].[dbo].[EV_car_sales] EV;
+
+INSERT INTO Year_2023 (Months, Year_Quarter, Sales)
+	SELECT EV.Months, CONCAT_WS(' ', 2023, EV.Months), EV.Year_2023 
+	FROM [sql_practice].[dbo].[EV_car_sales] EV;
+
+UPDATE Year_2023
+SET Year_Quarter = (CASE 
+				WHEN Months IN ('January', 'February', 'March') THEN '2023 Q1'
+				WHEN Months IN ('April', 'May', 'June') THEN '2023 Q2'
+				WHEN Months IN ('July', 'August', 'September') THEN '2023 Q3'
+				WHEN Months IN ('October', 'November', 'December') THEN '2023 Q4'
+				ELSE Months
+				END
+				);
+
+CREATE TABLE EV_sales 
+	(
+		Months VARCHAR(20)
+		, Year_Quarter VARCHAR(20)
+		, Sales INT
+		);
+
+INSERT INTO EV_sales (Months, Year_Quarter, Sales)
+(
+	SELECT Year_2021.Months, Year_2021.Year_Quarter, Year_2021.Sales FROM Year_2021 
+	UNION ALL
+	SELECT Year_2022.Months, Year_2022.Year_Quarter, Year_2022.Sales FROM Year_2022 
+	UNION ALL
+	SELECT Year_2023.Months, Year_2023.Year_Quarter, Year_2023.Sales FROM Year_2023
+	);
+
+SELECT * FROM EV_sales
