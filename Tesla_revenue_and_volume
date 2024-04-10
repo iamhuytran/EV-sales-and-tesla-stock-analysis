@@ -1,0 +1,3 @@
+overlay <- image_composite(plot4, plot3, "over")
+
+overlay
