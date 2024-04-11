@@ -23,6 +23,9 @@ The analysis involves the following steps:
 
 2. **Visualization**: Graphs are created to visualize the trends of EV car sales, Tesla stock prices, volume traded, and revenue over time. Overlaying of graphs is performed to observe correlations and patterns between these metrics.
 
+<img width="750" alt="EV_car_sales_separate" src="https://github.com/iamhuytran/EV-sales-and-tesla-stock-analysis/assets/102829980/df580248-408d-4df9-9cfd-0671f317c154">
+<img width="750" alt="Tesla_revenue" src="https://github.com/iamhuytran/EV-sales-and-tesla-stock-analysis/assets/102829980/7264ba82-b3ae-41d3-8392-9707c34921e6">
+
 3. **Correlation Analysis**: Statistical analysis is conducted to identify correlations between EV car sales and Tesla's financial metrics. Correlation coefficients are calculated to quantify the strength and direction of relationships.
 
 4. **Insights and Interpretation**: Interpretations and insights are drawn from the analysis results, highlighting any significant findings or trends observed.
