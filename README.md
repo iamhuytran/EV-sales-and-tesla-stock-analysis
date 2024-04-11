@@ -21,14 +21,12 @@ The analysis involves the following steps:
 
 1. **Data Preparation**: The EV car sales data and Tesla stock data are prepared for analysis, including data cleaning, formatting, and merging.
 
-2. **Visualization**: Graphs are created to visualize the trends of EV car sales, Tesla stock prices, volume traded, and revenue over time. Overlaying of graphs is performed to observe correlations and patterns between these metrics.
+2. **Visualization**: Graphs are created to visualize the trends of EV car sales, Tesla stock prices, volume traded, and revenue over time. Some visuals that were created include those that depict the amount of EV cars that were purcharsed in the US and the Tesla's revenue from 2021 to 2023 each per quarter as shown here.
 
 <img width="750" alt="EV_car_sales_separate" src="https://github.com/iamhuytran/EV-sales-and-tesla-stock-analysis/assets/102829980/df580248-408d-4df9-9cfd-0671f317c154">
 <img width="750" alt="Tesla_revenue" src="https://github.com/iamhuytran/EV-sales-and-tesla-stock-analysis/assets/102829980/7264ba82-b3ae-41d3-8392-9707c34921e6">
 
-3. **Correlation Analysis**: Statistical analysis is conducted to identify correlations between EV car sales and Tesla's financial metrics. Correlation coefficients are calculated to quantify the strength and direction of relationships. <img width="487" alt="Tesla_price_volume" src="https://github.com/iamhuytran/EV-sales-and-tesla-stock-analysis/assets/102829980/e24e511b-0536-4e9e-8fe2-397d6eae054c"> <img width="490" alt="Tesla_price_revenue" src="https://github.com/iamhuytran/EV-sales-and-tesla-stock-analysis/assets/102829980/1a35fc94-33a1-49c0-b30d-e1d44afebcbf">
-
-
+3. **Correlation Analysis**: Statistical analysis is conducted to identify correlations between EV car sales and Tesla's financial metrics. Correlation coefficients are calculated to quantify the strength and direction of relationships. A way that was used to test the correlation between different variables is overlapping graphs on top of each other in order to examine the patterns and trends more closely. <img width="487" alt="Tesla_price_volume" src="https://github.com/iamhuytran/EV-sales-and-tesla-stock-analysis/assets/102829980/e24e511b-0536-4e9e-8fe2-397d6eae054c"> <img width="490" alt="Tesla_price_revenue" src="https://github.com/iamhuytran/EV-sales-and-tesla-stock-analysis/assets/102829980/1a35fc94-33a1-49c0-b30d-e1d44afebcbf">
 
 
 
